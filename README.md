@@ -7,8 +7,8 @@ The tutorial section of the [official documentation](LINK_TO_DOC) documents how 
 This package should be added to a preinstalled Unity Demo Game, as it uses sound assets from that project.
 
 ## Dependencies
-*[Wwise Unity Addressables](https://github.com/audiokinetic/WwiseUnityAddressables)
-*The Wwise Unity Demo Game (minimum version 2021.1.0)
+* [Wwise Unity Addressables](https://github.com/audiokinetic/WwiseUnityAddressables)
+* The Wwise Unity Demo Game (minimum version 2021.1.0)
 
 
 ## Legal
