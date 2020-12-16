@@ -51,7 +51,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bf0cb93891e620b43abfec25ecba7671,
+    WwiseObjectReference: {fileID: 11400000, guid: cc032d176f34fc947b58d77586d4e4c9,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a8006159ea1a9a34382779ed60ad6e03,
+    WwiseObjectReference: {fileID: 11400000, guid: a5a66cc0b60c9984bbc0f46df36fa5a7,
       type: 2}
   useCallbacks: 0
   Callbacks: []
