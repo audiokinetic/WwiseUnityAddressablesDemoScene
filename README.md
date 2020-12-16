@@ -1,8 +1,7 @@
 # WwiseUnityAddressablesDemoScene
 
 This package provides components and assets for learning how to use the Wwise Unity Addressables package. 
-
-The tutorial section of the [official documentation](LINK_TO_DOC) documents how to use Wwise Unity Addressables to package the soundbanks and streaming files in this scene.
+The tutorial section of the [official documentation](LINK_TO_DOC) documents how to use Wwise Unity Addressables to package the assets in this scene.
 
 This package should be added to a preinstalled Unity Demo Game, as it uses sound assets from that project.
 
