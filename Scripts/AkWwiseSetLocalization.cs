@@ -9,8 +9,10 @@ public class AkWwiseSetLocalization : MonoBehaviour
 
 	public void SetLanguage()
 	{
+#if !UNITY_SERVER
 		Debug.Log($"Setting language to {LanguageString}");
 		AK.Wwise.Unity.WwiseAddressables.AkAddressableBankManager.Instance.SetLanguageAndReloadLocalizedBanks(LanguageString);
+#endif
 	}
 }
 #endif
