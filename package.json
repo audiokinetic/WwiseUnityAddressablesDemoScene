@@ -1,12 +1,12 @@
 {
   "name": "com.audiokinetic.wwise.addressablesdemoscene",
-  "version": "2020.1.0",
+  "version": "2023.1.5",
   "displayName": "Wwise Unity Addressables Demoscene",
   "description": "Wwise Unity Addressables Demoscene",
   "unity": "2019.4",
   "unityRelease": "4f1",
   "dependencies": {
-    "com.unity.addressables": "1.16.10"
+    "com.unity.addressables": "1.21.20"
   },
   "keywords": [
     "Wwise",
