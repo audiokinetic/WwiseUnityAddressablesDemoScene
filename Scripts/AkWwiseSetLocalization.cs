@@ -12,13 +12,16 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2024 Audiokinetic Inc.
+Copyright (c) 2025 Audiokinetic Inc.
 *******************************************************************************/
 
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if WWISE_ADDRESSABLES_24_1_OR_LATER
+using Wwise.API.Runtime.WwiseTypes.WwiseObjectsManagers;
+#endif
 
 public class AkWwiseSetLocalization : MonoBehaviour
 {
@@ -28,7 +31,12 @@ public class AkWwiseSetLocalization : MonoBehaviour
 	{
 #if !UNITY_SERVER
 		Debug.Log($"Setting language to {LanguageString}");
+#if WWISE_ADDRESSABLES_24_1_OR_LATER
+		List<string> bankToReload = new List<string>() {"PlayHello"};
+		StartCoroutine(WwiseEventReferencesManager.Instance.SetLanguageAndReloadLocalizedBanks(LanguageString, bankToReload));
+#else
 		AK.Wwise.Unity.WwiseAddressables.AkAddressableBankManager.Instance.SetLanguageAndReloadLocalizedBanks(LanguageString);
+#endif
 #endif
 	}
 }

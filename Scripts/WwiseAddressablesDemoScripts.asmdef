@@ -3,7 +3,8 @@
     "references": [
         "AK.Wwise.Unity.Addressables",
         "Unity.Addressables",
-        "Unity.ResourceManager"
+        "Unity.ResourceManager",
+        "AK.Wwise.Unity.API.WwiseTypes"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
