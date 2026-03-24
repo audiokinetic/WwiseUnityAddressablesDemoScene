@@ -11,4 +11,4 @@ This package should be added to a preinstalled Unity Demo Game, as it uses sound
 
 
 ## Legal
-Copyright © 2024 Audiokinetic Inc. All rights reserved.
+Copyright (c) 2026 Audiokinetic Inc. All rights reserved.
