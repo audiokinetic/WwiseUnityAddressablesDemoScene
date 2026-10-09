@@ -31,13 +31,21 @@ public class AkWwiseSetLocalization : MonoBehaviour
 	{
 #if !UNITY_SERVER
 		Debug.Log($"Setting language to {LanguageString}");
+		
 #if WWISE_ADDRESSABLES_24_1_OR_LATER
 		List<string> bankToReload = new List<string>() {"PlayHello"};
+		
+	#if UNITY_WEBGL
 		StartCoroutine(WwiseEventReferencesManager.Instance.SetLanguageAndReloadLocalizedBanks(LanguageString, bankToReload));
-#else
+	#else
+		_ = WwiseEventReferencesManager.Instance.SetLanguageAndReloadLocalizedBanks(LanguageString, bankToReload);
+	#endif // UNITY_WEBGL
+	
+#else // !WWISE_ADDRESSABLES_24_1_OR_LATER
 		AK.Wwise.Unity.WwiseAddressables.AkAddressableBankManager.Instance.SetLanguageAndReloadLocalizedBanks(LanguageString);
-#endif
-#endif
+#endif // WWISE_ADDRESSABLES_24_1_OR_LATER
+
+#endif // !UNITY_SERVER
 	}
 }
 #endif
